@@ -1,0 +1,75 @@
+/* src/styles.css */
+.parking-lot {
+	padding: 2rem;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 8px;
+}
+
+.parking-cell {
+	margin-top: 3rem;
+	position: relative;
+	width: 100px;
+	height: 100px;
+}
+
+.parking-cell img.cell {
+	width: 100%;
+	height: 100%;
+}
+
+.parking-cell img.vehicle {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 75%;
+	height: auto;
+}
+
+.license-plate-input {
+	display: flex;
+	align-items: center;
+	font-family: 'Arial', sans-serif;
+	font-size: 24px;
+}
+
+.letters-input,
+.numbers-input {
+	width: 70px;
+	height: 50px;
+	text-align: center;
+	font-size: 24px;
+	font-weight: bold;
+	border: 2px solid black;
+	border-radius: 5px;
+	margin: 0 5px;
+}
+
+.letters-input::placeholder,
+.numbers-input::placeholder {
+	color: gray;
+}
+
+.separator {
+	font-size: 24px;
+	font-weight: bold;
+}
+
+/* VehicleDetail.css */
+.license-plate {
+	display: inline-block;
+	padding: 10px 20px;
+	font-size: 1.5rem;
+	font-weight: bold;
+	background-color: #f0f0f0;
+	border: 2px solid #000;
+	border-radius: 5px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+.license-plate span {
+	margin-right: 5px;
+}
+
